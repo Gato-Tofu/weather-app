@@ -25,7 +25,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] flex flex-col items-center px-4 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0f] flex flex-col items-center px-4 py-12 relative">
       {/* Ambient background blobs */}
       <div className="fixed top-[-20%] left-[-10%] w-96 h-96 bg-emerald-900/20 rounded-full blur-[100px] pointer-events-none" />
       <div className="fixed bottom-[-20%] right-[-10%] w-96 h-96 bg-sky-900/20 rounded-full blur-[100px] pointer-events-none" />
@@ -44,7 +44,7 @@ export default function App() {
       </header>
 
       {/* Search */}
-      <div className="w-full max-w-md mb-8 animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
+      <div className="w-full max-w-md mb-8 animate-fade-up relative z-50" style={{ animationDelay: "0.1s" }}>
         <SearchBar onSelect={handleCitySelect} />
       </div>
 

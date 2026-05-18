@@ -43,7 +43,7 @@ export default function SearchBar({ onSelect }) {
       </div>
 
       {results.length > 0 && (
-        <ul className="absolute top-full mt-2 w-full glass rounded-2xl overflow-hidden z-50">
+        <ul className="absolute top-full mt-2 w-full glass rounded-2xl overflow-hidden z-[9999]">
           {results.map((city, i) => (
             <li
               key={i}
